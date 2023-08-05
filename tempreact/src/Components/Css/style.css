@@ -18,13 +18,13 @@ body {
     opacity: 0.9; /* Adjust the opacity as needed (0 to 1) */
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1000px) {
     .center-container {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
-        padding: 200px;
+        padding: 300px;
     }
 }
   
