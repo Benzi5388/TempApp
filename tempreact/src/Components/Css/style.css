@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding:20px;
   }
 
   /* styles.css */
@@ -16,5 +17,20 @@ body {
     background-repeat: no-repeat;
     opacity: 0.9; /* Adjust the opacity as needed (0 to 1) */
   }
+
+  @media (min-width: 768px) {
+    .center-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 200px;
+    }
+
+    .text-center {
+        width: 50%;
+    }
+}
+  
   
   

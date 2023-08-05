@@ -40,7 +40,6 @@ const TempApp = () => {
           return;
         }
         const weatherData = await weatherResponse.json();
-        console.log(weatherData, "555555555");
         if (weatherData && weatherData.main && weatherData.main.temp) {
           // Convert temperature from Kelvin to Celsius
           const tempCelsius = weatherData.main.temp - 273.15;
@@ -115,7 +114,10 @@ const TempApp = () => {
 
   return (
     <div className="center-container">
-      <Card className="text-center" style={{ width: "50%", backgroundColor: "rgb(242 211 206)" }}>
+      <Card className="text-center" style={{
+          width: '100%',
+          backgroundColor: 'rgb(242 211 206)',
+        }}>
         <Card.Header>
           <FaGlobe style={{ marginRight: "10px", fontSize: "80px" }} />
         </Card.Header>
